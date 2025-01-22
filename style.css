@@ -29,6 +29,7 @@ h1{
  background-color: purple;
  overflow-x: hidden;
  display: flex;
+ flex-wrap: wrap;
  flex-direction: row;
  align-items: center;
  justify-content: space-evenly;
