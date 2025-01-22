@@ -131,7 +131,7 @@ function printElement(element){
   newElement = document.createElement("a");
   newElement.id = "link";
   newElement.innerText = element.url;
-  newElement.href = element.url;
+  newElement.href = "http://" + element.url;
  }
  body.appendChild(newElement);
 }
