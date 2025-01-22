@@ -18,3 +18,7 @@ Sections of the document will be split into sections of the website displayed as
 HELPERS
 To start local server for the website directory:
 browser-sync start --server --files
+
+Git commands:
+git commit -m 'Some message about the change'
+git push origin 'branch-name'
