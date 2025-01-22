@@ -2,9 +2,11 @@
 This is my website! I use it to log my current projects. I'm still building it, so you're just seeing my progress as I do! The website is built completely in the terminal with vim. I'm writing a javascript file that scrubs a plain-text file that I use to populate the website, rather than having to update html every time I want to add something.
 [Cornhole PD]
 <CornholeKurt>
+~spaceowlpro.itch.io/cornhole-pd~
 Cornhole is a game I'm working on for the Playdate, the little yellow handheld console with a crank. Follow along here for updates on where it's at. Currently I'm focused on writing dialogue for the story mode.
 <CornholeBag>
 [SoundWalk]
+~soundwalkapp.com~
 SoundWalk is a longterm project that uses GPS on phones to drive audio experiences. I'm currently working on a new experience for the app for the Fort Wayne Urban League about it's rich history. Stay tuned for more!
 [Compost Your Internet]
 ~compostyourinternet.com~
