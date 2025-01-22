@@ -20,6 +20,7 @@ function parseSections(text){
 function getSections(text){
  let sections = [];
  let parsingImage = false;
+ let parsingURL = false;
  for(let i = 0; i < text.length; i++){
   let c = text[i];
   let currentSection = sections[sections.length - 1]; 
@@ -36,9 +37,14 @@ function getSections(text){
    case ">":
     parsingImage = false;
     break;
+   case "~":
+    parsingURL = !parsingURL;
+    break;
    default:
     if(parsingImage)
-     addImage(c, currentSection); 
+     addImage(c, currentSection);
+    else if(parsingURL)
+     addURL(c, currentSection);
     else if(currentSection.titleFinished)
      addText(c, currentSection);
     else 
@@ -59,16 +65,27 @@ function addText(text, currentSection){
 
  currentElement.text += text;
 }
-//TODO For some reason this is dropping the first letter of the image title.
+
 function addImage(text, currentSection){
  if(currentSection.body.length == 0)
   currentSection.body.push({image: ""});
  
  let currentElement = currentSection.body[currentSection.body.length - 1];
  if(currentElement.image == null)
-  currentElement = currentSection.body.push({image: ""});
-
+  currentElement = currentSection.body.push({image: "" + text});
+ 
  currentElement.image += text;
+}
+
+function addURL(text, currentSection){
+ if(currentSection.body.length == 0)
+  currentSection.body.push({url: ""});
+
+ let currentElement = currentSection.body[currentSection.body.length - 1];
+ if(currentElement.url == null)
+  currentElement = currentSection.body.push({url: "" + text});
+
+ currentElement.url += text;
 }
 
 function newSectionObject(){
@@ -83,7 +100,7 @@ function displaySections(sections){
  sections.forEach(printSection);
  sections.forEach(printNavElement);
 }
-//NEXT change this to look through the body array of the sections and print each text and image object.
+
 function printSection(section){
  const headerElement = document.createElement("h1");
  headerElement.id = "h1";
@@ -109,6 +126,12 @@ function printElement(element){
  if(element.image != null){
   newElement = document.createElement("img");
   newElement.src = "images/" + element.image + ".png";
+ }
+ if(element.url != null){
+  newElement = document.createElement("a");
+  newElement.id = "link";
+  newElement.innerText = element.url;
+  newElement.href = element.url;
  }
  body.appendChild(newElement);
 }
