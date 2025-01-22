@@ -1,0 +1,10 @@
+[Welcome]
+This is my website! I use it to log my current projects.
+[Cornhole PD]
+<CornholeKurt>
+Cornhole is a game I'm working on for the Playdate, the little yellow handheld console with a crank. Follow along here for updates on where it's at. Currently I'm focused on writing dialogue for the story mode.
+<CornholeBag>
+[SoundWalk]
+SoundWalk is a longterm project that uses GPS on phones to drive audio experiences. I'm currently working on a new experience for the app for the Fort Wayne Urban League about it's rich history. Stay tuned for more!
+[Compost Your Internet]
+This is a solar server that runs from my house and takes data measured at Dirt Wain, a composting company in Fort Wayne, IN, to generate online art pieces.

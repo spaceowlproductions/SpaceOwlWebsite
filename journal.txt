@@ -1,0 +1,20 @@
+Website:
+I would like to make a personal website that is populated by a simple text file that I type into in the terminal.
+
+I would like for this to be completely built in the terminal.
+
+I will create a simple js parser that will read this text file and turn it into HTML. 
+
+I want to do this because I think it would be nice to update my website by just typing into a document.
+
+I also want to stop taking the path of least resistance with my projects, so I won't be googling a bunch of stuff for this. I will just use documentation of Javascript and HTML.
+
+I'll probably host this on Github Pages because my solar server isn't up and running consistently. I'll eventually host it there.
+
+I'll create a simple image tag so that I can embed images into my writing that will then be turned into real images via the parser.
+
+Sections of the document will be split into sections of the website displayed as text buttons on the left, and the content of the section displayed on the right. Double brackets could surround the section title.
+
+HELPERS
+To start local server for the website directory:
+browser-sync start --server --files

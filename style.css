@@ -1,0 +1,46 @@
+body{
+ background-color: lightblue;
+}
+
+h1{
+ color: purple;
+}
+
+.mainBody{
+ margin-top: 30px;
+ display: flex;
+ flex-direction: column;
+ padding: 0px 10px;
+}
+
+.mainBody > img {
+ margin: 10px 0px 10px;
+ max-width: 100%;
+ height: auto;
+}
+
+.navBar{
+ height: 30px;
+ width: 99vw;
+ position: fixed;
+ z-index = 2;
+ top: 0;
+ left: 0;
+ background-color: purple;
+ overflow-x: hidden;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-evenly;
+ margin: 5px;
+}
+
+.navBar a{
+ color: lightgray;
+ display: block;
+}
+
+.navBar a:hover{
+ color: white;
+ text-decoration-line: overline underline;
+}
