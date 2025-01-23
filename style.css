@@ -28,7 +28,6 @@ t{
 
 .navBar{
  width: 99vw;
- min-width: 500px;
  position: fixed;
  z-index = 2;
  top: 0;
