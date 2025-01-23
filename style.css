@@ -1,5 +1,6 @@
 body{
  background-image: linear-gradient(45deg,#26004d,black,#26004d);
+ max-width: 1000px;
 }
 
 h1{
@@ -13,7 +14,7 @@ t{
 }
 
 .mainBody{
- margin-top: 30px;
+ margin-top: 50px;
  display: flex;
  flex-direction: column;
  padding: 0px 10px;
@@ -21,22 +22,21 @@ t{
 
 .mainBody > img {
  margin: 10px 0px 10px;
- max-width: 100%;
+ max-width: 800px;
  height: auto;
 }
 
 .navBar{
- height: 30px;
  width: 99vw;
+ min-width: 500px;
  position: fixed;
  z-index = 2;
  top: 0;
  left: 0;
  background-color: #e6ccff;
- overflow-x: hidden;
  display: flex;
- flex-wrap: wrap;
  flex-direction: row;
+ flex-wrap: wrap;
  align-items: center;
  justify-content: space-evenly;
  margin: 5px;
@@ -45,6 +45,7 @@ t{
 .navBar a{
  color: black;
  font-family: "Courier New", monospace;
+ font-size: 20px;
  display: block;
 }
 
