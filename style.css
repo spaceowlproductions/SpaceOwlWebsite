@@ -1,6 +1,11 @@
-body{
+html{
  background-image: linear-gradient(45deg,#26004d,black,#26004d);
+ min-height: 100vh;
+}
+
+body{
  max-width: 1000px;
+ padding: 0px 10px 20px 10px;
 }
 
 h1{
@@ -39,6 +44,7 @@ t{
  align-items: center;
  justify-content: space-evenly;
  margin: 5px;
+ padding: 5px;
 }
 
 .navBar a{
@@ -51,6 +57,7 @@ t{
 .navBar a:hover{
  color: #26004d;
  text-decoration-line: overline underline;
+ cursor: pointer;
 }
 
 a{
@@ -59,4 +66,5 @@ a{
 
 a:hover{
  color: white;
+ cursor: pointer;
 }

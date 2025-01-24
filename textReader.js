@@ -1,5 +1,6 @@
-const body = document.getElementById("MainBody");
+const mainBody = document.getElementById("MainBody");
 const navBar = document.getElementById("navBar");
+
 function fillWebsite(){
  fillWebsiteAsync();
 }
@@ -8,8 +9,9 @@ async function fillWebsiteAsync(){
  let data = await fetch("./website.txt");
  let websiteText = await data.text();
  let sections = getSections(websiteText);
- console.log(sections);
- displaySections(sections);
+ sections.forEach(printNavElement);
+ printSection(sections[0]);
+ //displaySections(sections);
 }
 
 function parseSections(text){
@@ -100,12 +102,14 @@ function displaySections(sections){
  sections.forEach(printSection);
  sections.forEach(printNavElement);
 }
-
+ 
 function printSection(section){
+ mainBody.innerText = "";
+
  const headerElement = document.createElement("h1");
  headerElement.id = "h1";
  headerElement.innerText = section.title;
- body.appendChild(headerElement);
+ mainBody.appendChild(headerElement);
  
  section.body.map(printElement);
 }
@@ -114,6 +118,7 @@ function printNavElement(section){
  const navElement = document.createElement("a");
  navElement.id = "link";
  navElement.innerText = section.title;
+ navElement.addEventListener("click", function(){printSection(section)});
  navBar.appendChild(navElement);
 }
 
@@ -133,5 +138,5 @@ function printElement(element){
   newElement.innerText = element.url;
   newElement.href = "http://" + element.url;
  }
- body.appendChild(newElement);
+ mainBody.appendChild(newElement);
 }
