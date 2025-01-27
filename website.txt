@@ -1,5 +1,12 @@
 [Welcome]
-This is my website! I use it to log my current projects. I'm still building it, so you're just seeing my progress as I do! The website is built completely in the terminal with vim. I'm writing a javascript file that scrubs a plain-text file that I use to populate the website, rather than having to update html every time I want to add something.
+#My name is Kurt!#
+I'm an artist who primarily works on coding projects including grant funded apps and websites. I'm specifically interested in exploring how we can be entertained by immersive digital art without relying on environmentally costly technologies. Our world is becoming increasingly reliant on high res graphics and wasteful AI. This is not the only way forward and it surely isn't the best way.
+#This is my website!#
+It is built completely in the terminal with vim. I wrote a javascript file that scrubs a plain-text file that I use to populate the website rather than having to update html every time I want to add something to the page. This is in line with my goals to decouple myself from fancy api's made by large coorporations that try to draw you in and become reliant on their instantly gratifying, do-everything-for-you systems.
+
+I didn't google a system to copy. I thought up a way that I would most enjoy creating my website and I built it with html, css, and js.
+
+Currently, this site is being hosted with no backend, so the text file is being parsed every time a user opens the website, the js code running on their machine. While this isn't very wasteful considering the size of the file, I'd like to eventually host it on my solar server, and run the parsing and build the html once in the back end rather than every time a user visits the page.
 [Cornhole PD]
 ~spaceowlpro.itch.io/cornhole-pd~
 <CornholeKurt>
