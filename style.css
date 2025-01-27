@@ -13,6 +13,12 @@ h1{
  font-family: "Courier New", monospace;
 }
 
+h2{
+ color: #e6ccff;
+ font-family: "Courier New", monospace;
+ font-size: 18px;
+}
+
 t{
  color: lightblue;
  font-family: "Lucida Console", monospace;
@@ -56,7 +62,7 @@ t{
 
 .navBar a:hover{
  color: #26004d;
- text-decoration-line: overline underline;
+ text-decoration-line: underline;
  cursor: pointer;
 }
 

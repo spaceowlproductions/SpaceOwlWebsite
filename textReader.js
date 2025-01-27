@@ -23,6 +23,7 @@ function getSections(text){
  let sections = [];
  let parsingImage = false;
  let parsingURL = false;
+ let parsingTitle = false;
  for(let i = 0; i < text.length; i++){
   let c = text[i];
   let currentSection = sections[sections.length - 1]; 
@@ -42,11 +43,16 @@ function getSections(text){
    case "~":
     parsingURL = !parsingURL;
     break;
+   case "#":
+    parsingTitle = !parsingTitle;
+    break;
    default:
     if(parsingImage)
      addImage(c, currentSection);
     else if(parsingURL)
      addURL(c, currentSection);
+    else if (parsingTitle)
+     addTitle(c, currentSection);
     else if(currentSection.titleFinished)
      addText(c, currentSection);
     else 
@@ -88,6 +94,17 @@ function addURL(text, currentSection){
   currentElement = currentSection.body.push({url: "" + text});
 
  currentElement.url += text;
+}
+
+function addTitle(text, currentSection){
+ if(currentSection.body.length == 0)
+  currentSection.body.push({title: ""});
+
+ let currentElement = currentSection.body[currentSection.body.length - 1];
+ if(currentElement.title == null)
+  currentElement = currentSection.body.push({title: "" + text});
+
+ currentElement.title += text;
 }
 
 function newSectionObject(){
@@ -137,6 +154,10 @@ function printElement(element){
   newElement.id = "link";
   newElement.innerText = element.url;
   newElement.href = "http://" + element.url;
+ }
+ if(element.title != null){
+  newElement = document.createElement("h2");
+  newElement.innerText = element.title;
  }
  mainBody.appendChild(newElement);
 }
