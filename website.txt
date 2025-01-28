@@ -25,6 +25,8 @@ An article was published in the MDW Atlas project that you can read here:
 [Compost Your Internet]
 ~compostyourinternet.com~
 
+<CompostYourInternet>
+
 This is a solar server that runs from my house and takes data measured at Dirt Wain, a composting company in Fort Wayne, IN, to generate online art pieces.
 [Thoughts]
 #Inland Empire - 1/25/25#
