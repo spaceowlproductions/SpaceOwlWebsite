@@ -9,15 +9,22 @@ I didn't google a system to copy. I thought up a way that I would most enjoy cre
 Currently, this site is being hosted with no backend, so the text file is being parsed every time a user opens the website, the js code running on their machine. While this isn't very wasteful considering the size of the file, I'd like to eventually host it on my solar server, and run the parsing and build the html once in the back end rather than every time a user visits the page.
 [Cornhole PD]
 ~spaceowlpro.itch.io/cornhole-pd~
+
 <CornholeKurt>
+
 Cornhole is a game I'm working on for the Playdate, the little yellow handheld console with a crank. Follow along here for updates on where it's at. Currently I'm focused on writing dialogue for the story mode.
+
 <CornholeBag>
 [SoundWalk]
 ~soundwalkapp.com~
-SoundWalk is a longterm project that uses GPS on phones to drive audio experiences. It started as a small dream to create musical scores for public spaces. I imagined being able to compose music that was mapped to a park, and have it change as the listener moved through the space. It ended up being more of a tool for social causes, specifically as a way to tell the marginalized stories and histories of an area. An article was published in the MDW Atlas project that you can read here:
+
+SoundWalk is a longterm project that uses GPS on phones to drive audio experiences. It started as a small dream to create musical scores for public spaces. I imagined being able to compose music that was mapped to a park, and have it change as the listener moved through the space. It ended up being more of a tool for social causes, specifically as a way to tell the marginalized stories and histories of an area. 
+
+An article was published in the MDW Atlas project that you can read here:
 ~mdw.art/atlas/goingwiththeflow~
 [Compost Your Internet]
 ~compostyourinternet.com~
+
 This is a solar server that runs from my house and takes data measured at Dirt Wain, a composting company in Fort Wayne, IN, to generate online art pieces.
 [Thoughts]
 #Inland Empire - 1/25/25#
