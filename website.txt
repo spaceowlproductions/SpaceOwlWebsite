@@ -14,7 +14,8 @@ Cornhole is a game I'm working on for the Playdate, the little yellow handheld c
 <CornholeBag>
 [SoundWalk]
 ~soundwalkapp.com~
-SoundWalk is a longterm project that uses GPS on phones to drive audio experiences. I'm currently working on a new experience for the app for the Fort Wayne Urban League about it's rich history. Stay tuned for more!
+SoundWalk is a longterm project that uses GPS on phones to drive audio experiences. It started as a small dream to create musical scores for public spaces. I imagined being able to compose music that was mapped to a park, and have it change as the listener moved through the space. It ended up being more of a tool for social causes, specifically as a way to tell the marginalized stories and histories of an area. An article was published in the MDW Atlas project that you can read here:
+~mdw.art/atlas/goingwiththeflow~
 [Compost Your Internet]
 ~compostyourinternet.com~
 This is a solar server that runs from my house and takes data measured at Dirt Wain, a composting company in Fort Wayne, IN, to generate online art pieces.
