@@ -58,6 +58,7 @@ t{
  font-family: "Courier New", monospace;
  font-size: 20px;
  display: block;
+ margin: 0px 10px 0px 10px;
 }
 
 .navBar a:hover{
