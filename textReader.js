@@ -107,6 +107,16 @@ function addTitle(text, currentSection){
  currentElement.title += text;
 }
 
+function setupElement(text, currentSection, elementType){
+ let preparedElement = {}['${elementType}'];
+ if(currentSection.body.length == 0)
+  currentSection.body.push(preparedElement);
+
+ let currentElement = currentSection.body[currentSection.body.length - 1];
+ if(currentElement.title == null)
+  currentElement = currentSection.body.push(preparedElement['elementType'] += text);
+}
+
 function newSectionObject(){
  return {title: "", body: [], titleFinished: false}
 }

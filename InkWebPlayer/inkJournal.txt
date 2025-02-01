@@ -1,0 +1,1 @@
+I'd like to try to add a system that generates a random throw and feeds that info to the ink system so that the user gets the full experience of the timing of the conversation... Might be overboard but still could be cool.

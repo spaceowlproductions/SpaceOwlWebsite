@@ -15,6 +15,10 @@ Currently, this site is being hosted with no backend, so the text file is being 
 Cornhole is a game I'm working on for the Playdate, the little yellow handheld console with a crank. Follow along here for updates on where it's at. Currently I'm focused on writing dialogue for the story mode.
 
 <CornholeBag>
+You can play through dialogue for the game as I write it here:
+~spaceowlproductions.com/inkPlayer.html~
+
+I'll be adding dialogue to this for testing as I write, so feel free to check back in as you'd like.
 [SoundWalk]
 ~soundwalkapp.com~
 
